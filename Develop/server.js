@@ -46,6 +46,10 @@ app.get("/api/notes", (req, res) => {
   res.json(notes);
 });
 
+app.delete("/api/notes/:id", (req, res) => {
+  res.send("DELETE Request Called");
+});
+
 // Post requests
 
 app.post("/api/notes", (req, res) => {
